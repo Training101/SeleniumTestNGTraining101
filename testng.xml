@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Default suite" parallel="methods" verbose="3">
+	<test name=" First test" skipfailedinvocationcounts="false">
+		<classes>
+			<class name="com.testng.TestNGTestCase">
+				<methods>
+					<include name="testCase" />
+				</methods>				 
+			</class>
+		</classes>
+	</test>
+</suite>

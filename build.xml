@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="Ant-Test" default="runTestNG" basedir=".">
+	<property name="src.dir" location="src" />
+	<property name="build.dir" location="bin" />
+	<property name="lib.dir" location="lib" />
+	<property name="testng.output.dir" location="test-output" />
+
+
+	<!-- Add the jar/class files to the classpath -->
+	<path id="classes">
+		<pathelement location="${build.dir}" />
+		<fileset dir="${lib.dir}">
+		</fileset>
+	</path>
+
+	<!-- Define <testng> task -->
+	<taskdef name="testng" classname="org.testng.TestNGAntTask">
+		<classpath>
+			<pathelement location="lib/testng-6.1.1.jar" />
+		</classpath>
+	</taskdef>
+
+	<!-- Clean the project -->
+	<target name="clean">
+		<delete dir="${build.dir}" />
+	</target>
+
+	<!-- Create the dirctories -->
+	<target name="makedir">
+		<mkdir dir="${build.dir}" />
+	</target>
+
+	<!-- Compile the source -->
+	<target name="compile" depends="clean, makedir">
+		<javac srcdir="${src.dir}" destdir="${build.dir}" classpathref="classes">
+		</javac>
+	</target>
+
+	<!-- Run the test cases with testng as mentioned in the testng.xml -->
+	<target name="runTestNG" depends="compile">
+		<description>
+			Running the test cases with TestNG.
+		</description>
+		<mkdir dir="${testng.output.dir}" />
+		<!-- Create the output directory. -->
+		<testng outputdir="${testng.output.dir}" classpathref="classes">
+			<xmlfileset dir="." includes="testng.xml" />
+		</testng>
+	</target>
+</project>
+

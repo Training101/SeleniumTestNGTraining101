@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<table name="Table1">
+	<row>
+		<column>Camel</column>
+	</row>
+	<row>
+		<column>Antelope</column>
+	</row>
+	<row>
+		<column>Bulldog</column>
+	</row>
+</table>
