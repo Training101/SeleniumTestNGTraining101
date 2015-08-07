@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="3" name="Failed suite [Default suite]" parallel="tests">
+  <parameter name="browser" value="ie"/>
+  <test name="IE test(failed)" parallel="tests">
+    <parameter name="browser" value="ie"/>
+    <classes>
+      <class name="com.selenium.multibrowser.MultiBrowserExecution">
+        <methods>
+          <include name="launchapp"/>
+          <include name="launchapp"/>
+          <include name="launchapp"/>
+          <include name="closeBrowser"/>
+          <include name="closeBrowser"/>
+          <include name="calculatepercent"/>
+        </methods>
+      </class> <!-- com.selenium.multibrowser.MultiBrowserExecution -->
+    </classes>
+  </test> <!-- IE test(failed) -->
+  <test name="Chrome test(failed)" parallel="tests">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.selenium.multibrowser.MultiBrowserExecution">
+        <methods>
+          <include name="launchapp"/>
+          <include name="launchapp"/>
+          <include name="launchapp"/>
+          <include name="closeBrowser"/>
+          <include name="closeBrowser"/>
+          <include name="calculatepercent"/>
+        </methods>
+      </class> <!-- com.selenium.multibrowser.MultiBrowserExecution -->
+    </classes>
+  </test> <!-- Chrome test(failed) -->
+  <test name="FireFox test(failed)" parallel="tests">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="com.selenium.multibrowser.MultiBrowserExecution">
+        <methods>
+          <include name="launchapp"/>
+          <include name="launchapp"/>
+          <include name="launchapp"/>
+          <include name="closeBrowser"/>
+          <include name="closeBrowser"/>
+          <include name="calculatepercent"/>
+        </methods>
+      </class> <!-- com.selenium.multibrowser.MultiBrowserExecution -->
+    </classes>
+  </test> <!-- FireFox test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

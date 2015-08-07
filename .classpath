@@ -9,6 +9,6 @@
 	<classpathentry kind="lib" path="lib/poi-ooxml-3.12.jar"/>
 	<classpathentry kind="lib" path="lib/poi-ooxml-schemas-3.12.jar"/>
 	<classpathentry kind="lib" path="lib/java-client-3.1.0.jar"/>
-	<classpathentry kind="lib" path="guava-18.0.jar"/>
+	<classpathentry kind="lib" path="lib/log4j-1.2.16.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

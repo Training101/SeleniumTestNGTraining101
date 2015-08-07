@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Default suite" parallel="tests" verbose="3">
+	<test name="FireFox test">
+		<parameter name="browser" value="firefox"/>
+		<classes>
+			<class name="com.selenium.multibrowser.MultiBrowserExecution">
+				<methods>
+					<include name="testCase" />
+				</methods>				 
+			</class>
+		</classes>
+	</test>
+	
+	<test name="Chrome test">
+		<parameter name="browser" value="chrome"/>
+		<classes>
+			<class name="com.selenium.multibrowser.MultiBrowserExecution">
+				<methods>
+					<include name="testCase" />
+				</methods>				 
+			</class>
+		</classes>
+	</test>
+	
+	<test name="IE test">
+		<parameter name="browser" value="ie"/>
+		<classes>
+			<class name="com.selenium.multibrowser.MultiBrowserExecution">
+				<methods>
+					<include name="testCase" />
+				</methods>				 
+			</class>
+		</classes>
+	</test>
+</suite>
