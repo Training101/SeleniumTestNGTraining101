@@ -27,7 +27,7 @@ public class FluentWaitExample {
                         .ignoring(NoSuchElementException.class);
 
         WebElement dynamicElement = wait.until(new Function<WebDriver, WebElement>() {
-            @Override
+        	
             public WebElement apply(WebDriver driver) {
                 return driver.findElement(By.id("cloanamount"));
             }
