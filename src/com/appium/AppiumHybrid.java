@@ -41,21 +41,6 @@ public class AppiumHybrid {
          driver.findElement(By.xpath("//android.widget.EditText[@text='Username']")).sendKeys("company");
          driver.findElement(By.xpath("//android.widget.EditText[@resource-id='com.experitest.ExperiBank:id/passwordTextField']")).sendKeys("company");
          driver.findElement(By.xpath("//android.widget.Button[@text='Login']")).click();         
-         //Navigate to Make Payment screen
-         driver.findElement(By.xpath("//android.widget.Button[@text='Make Payment']")).click();         
-         //Enter payment data
-         driver.findElement(By.xpath("//android.widget.EditText[@text='Phone']")).sendKeys("0112345678");
-         driver.findElement(By.xpath("//android.widget.EditText[@text='Name']")).sendKeys("John");
-         driver.findElement(By.xpath("//android.widget.EditText[@text='Amount']")).sendKeys("2");
-         driver.findElement(By.xpath("//android.widget.Button[@text='Select']")).click();         
-         //Scroll to the correct country
-         driver.scrollTo("Spain");
-         driver.findElement(By.xpath("//android.widget.TextView[@text='Spain']")).click();         
-         //Send Payment
-         driver.findElement(By.xpath("//android.widget.Button[@text='Send Payment']")).click();         
-         //Confirm
-         driver.findElement(By.xpath("//android.widget.Button[@text='Yes']")).click();
-         
          
          //Check the available balance
          System.out.println("Current available contexts are : "+driver.getContextHandles());
