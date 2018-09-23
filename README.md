@@ -1,2 +1,2 @@
 # SeleniumTestNGTraining101
-[a relative link](other_file.md)
+[Selenium Grid Configurations](Grid Configuration.md)
