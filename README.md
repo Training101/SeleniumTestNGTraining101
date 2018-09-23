@@ -1,2 +1,3 @@
 # SeleniumTestNGTraining101
-[Selenium Grid Configurations](Grid Configuration.md)
+[Selenium Grid Configurations](Grid%20Configuration.md)
+
