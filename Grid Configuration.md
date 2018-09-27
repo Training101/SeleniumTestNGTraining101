@@ -31,3 +31,20 @@ Check the grid console configuration
 ```
 docker run -d –-link selenium-hub:hub selenium/node-chrome
 ```
+
+# Useful Docker commands
+#### stop all docker containers
+```
+docker kill $(docker ps -q)
+```
+#### remove all containers
+```
+docker rm $(docker ps -a -q)
+```
+
+#### remove all docker images
+```
+docker rmi $(docker images -q)
+```
+
+
