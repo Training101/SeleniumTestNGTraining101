@@ -17,6 +17,12 @@ docker run -d –-link selenium-hub:hub selenium/node-chrome
 ```
 
 # Useful Docker commands
+
+#### Start an existing container
+```
+docker start selenium-hub
+```
+
 #### stop all docker containers
 ```
 docker kill $(docker ps -q)
