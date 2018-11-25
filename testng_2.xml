@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite" parallel="methods" thread-count="4">
+	<parameter name="browser" value="Chrome" />
+	<parameter name="testParam" value="Chanaka" />
+
+	<test name="Test">
+		<classes>
+			<class name="com.testng.TestNGSample3" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

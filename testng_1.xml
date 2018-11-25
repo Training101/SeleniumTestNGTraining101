@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite" parallel="false">
+  <test name="Test1">
+    <classes>
+      <class name="com.testng.exercise.Test001">
+      	<methods>
+       		<include name="test001"/>	
+      	</methods> 
+      </class>
+      <class name="com.testng.exercise.Test003">
+      	<methods>
+       		<include name="test003"/>	
+      	</methods> 
+      </class>
+    </classes>
+  </test> 
+</suite> <!-- Suite -->
